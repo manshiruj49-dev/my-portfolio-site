@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manshi Ruj - Frontend Developer</title>
+    <link rel="icon" href="./assets/profile_img.png">
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="style.css">
+    <!-- JS link -->
+    <script src="script.js"></script>
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <!-- Google Fonts -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Syne:wght@400..800&family=Train+One&display=swap" rel="stylesheet">
+ </head>
+<body class="bg-[#121212] text-white">
+
+    <!-- Header + Navbar -->
+    <header>
+        <nav class="bg-[#121212]/50 backdrop-blur-md flex items-center justify-between w-full py-4 px-5 md:px-20 fixed top-0 left-0 z-[9999]">
+            <!-- LOGO -->
+            <h2 class="text-xl md:text-2xl font-bold w-7">&lt;/MR&gt;</h2>
+                <i id="menu-btn" class="fa-solid fa-grip-lines text-2xl z-[99999] md:hidden"></i>
+                <!-- Desktop Menu -->
+                <ul class="hidden md:flex gap-10 items-center font-semibold text-[#A0A0A0]">
+                    <li><a href="index.html" class="text-blue-500 border-b-2 border-cyan-500 pb-1">Home</a></li>
+                    <li><a href="work.html" class="hover:text-white">Work</a></li>
+                    <li><a href="journey.html" class="hover:text-white">Journey</a></li>
+                    <li><a href="writing.html" class="hover:text-white">Writing</a></li>
+                    <li><a href="contact.html" class="hover:text-white">Contact</a></li>
+                    <i class="fa-solid fa-moon text-[#A0A0A0] py-3 px-4 hover:text-white rotate-[-20deg] hover:bg-[#19192b] hover:transition-transform duration-200 hover:scale-110 hover:rotate-[5deg] hover:cursor-pointer rounded-full"></i>
+                    <a href="contact.html" class="group bg-gradient-to-l from-cyan-500 to-blue-500 py-2 px-5 rounded text-white">Let's Connect<i class="fa-solid fa-arrow-right text-white ml-2 transition-transform duration-300 group-hover:translate-x-1"></i></a>
+                </ul>         
+        </nav>
+
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobile-menu" class="hidden md:hidden inset-0 fixed bg-[#121212] backdrop-blur-lg py-6 px-6 gap-8 font-semibold top-0 left-0 w-full 
+        flex flex-col text-center text-[#A0A0A0] z-50">
+          <a href="index.html" class="mt-32 text-blue-500 pb-1">Home</a>
+          <a href="work.html" class="hover:text-white">Work</a>
+          <a href="journey.html" class="hover:text-white">Journey</a>
+          <a href="writing.html" class="hover:text-white">Writing</a>
+          <a href="contact.html" class="hover:text-white">Contact</a>
+
+          <a href="contact.html" class="group bg-gradient-to-l from-cyan-500 to-blue-500 py-2 px-5 rounded text-white">Let's Connect<i class="fa-solid fa-arrow-right text-white ml-2 transition-transform duration-300 group-hover:translate-x-1"></i></a>
+        </div>
+    </header>
+
+    <!-- Main (HERO Section) -->
+    <main class="mx-4 md:mx-24">
+        
+        <section class="mx-10 min-h-screen gap-20 justify-center items-center flex flex-col-reverse md:grid md:grid-cols-2">
+           <!-- Left Content -->
+            <div class="md:mt-20 text-center md:text-left">
+            <span class="text-blue-500">Hello, I'm</span>
+            <h1 class="text-5xl md:text-8xl mt-4 mb-5"><span>Manshi</span> <span class="text-blue-500">Ruj</span></h1>
+            <h2 class="text-[#A0A0A0] text-xl font-semibold md:text-3xl mb-10">Frontend Developer & UI Designer</h2>
+            <p class="text-[#A0A0A0] text-lg mb-10">I craft responsive websites and web applications that provide intuitive, pixel-perfect user experiences with modern technologies like TypeScript, Next.js, and more.</p>
+            
+            <div class="flex flex-col md:flex-row gap-4">
+                <a href="work.html" class="group bg-blue-500 py-3 px-6 rounded-md transition-all duration-200 hover:-translate-y-1">View My Work<i class="fa-solid fa-arrow-right text-white ml-2 transition-transform duration-300 group-hover:translate-x-1"></i></a>
+                <a href="contact.html" class="bg-[#19192b] py-3 px-6 rounded-md text-blue-500 transition-all duration-200 hover:-translate-y-1 hover:bg-[#262642]">Get In Touch</a>
+                <a href="./assets/manshirujCV.pdf" target="_blank" class="bg-transparent py-3 px-6 rounded-md border-2 border-[#A0A0A0] transition-all duration-200 hover:-translate-y-1 hover:border-2 hover:border-blue-500 hover:text-blue-500">View Resume</a>
+            </div>
+            </div>
+
+            <!-- Right Content - Image -->
+            <figure class="group relative w-[260px] sm:w-[400px] mt-32 md:mx-0 md:mt-0">
+    
+            <!-- BACK BORDER SHAPE -->
+            <div
+            class="absolute -bottom-4 -right-4 w-full h-full rounded-2xl border border-blue-500 opacity-40 transition-all duration-1000 group-hover:-bottom-6 group-hover:-right-6 group-hover:-translate-y-1">
+            </div>
+
+            <!-- MAIN IMAGE -->
+            <img src="./assets/profile_img.png" class="relative w-full h-auto rounded-2xl object-cover shadow-lg transition-transform duration-1000 group-hover:scale-[1.03] group-hover:-translate-y-1" alt="Profile Picture"/>
+            </figure>   
+        </section>
+    </main>
+
+<!-- Work + PROJECT Section -->
+<section id="project" class="mx-12 md:mx-32 scroll-mt-20">
+  <div class="text-center">
+    <h2 class="text-4xl mt-36 mb-3 font-bold md:text-5xl md:mt-20">
+      Featured <span class="text-blue-500">Projects</span>
+    </h2>
+    <p class="text-[#A0A0A0] text-lg md:text-xl mb-10 md:mb-20">
+      Insights and perspectives on web development and design
+    </p>
+  </div>
+
+  <!-- Project CARDS -->
+  <div class="md:grid md:grid-cols-3 gap-10">
+
+    <!-- Card 1 -->
+    <div class="bg-[#252525] rounded-xl mb-10 transition-transform duration-200 hover:border-2 hover:border-blue-500 hover:-translate-y-2 hover:scale-1">
+      <img src="./assets/card-1.png" class="mb-1 rounded-xl">
+      <div class="p-5 md:px-8">
+        <h3 class="text-2xl mb-3">KAMPUSKORNER</h3>
+        <p class="text-[#A0A0A0] mb-10">A real-time anonymous chat platform with no profiles or history. Implemented secure WebSocket-based chat with profanity filters and user retention-focused features.</p>
+        <div class="flex flex-wrap gap-2 mt-4 mb-5">
+          <span class="bg-[#262642] text-sm px-3 py-1 rounded-2xl">Html</span>
+          <span class="bg-[#262642] text-sm px-3 py-1 rounded-2xl">CSS</span>
+          <span class="bg-[#262642] text-sm px-3 py-1 rounded-2xl">Javascript</span>
+          <span class="bg-[#262642] text-sm px-3 py-1 rounded-2xl">React</span>
+        </div>
+        <a href="#" class="text-blue-500 underline hover:no-underline hover:text-blue-400">
+          Visit Project
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="bg-[#252525] rounded-xl mb-10 transition-transform duration-200 hover:border-2 hover:border-blue-500 hover:-translate-y-2 hover:scale-1">
+      <img src="./assets/card-2.jpg" class="mb-1 rounded-xl">
+      <div class="p-5 md:px-8">
+        <h3 class="text-2xl mb-3">Retouchly</h3>
+        <p class="text-[#A0A0A0] mb-10">Travel booking platform for Bihar enabling route discovery, ticketing, and real-time seat selection. Built with modern stack including admin and driver dashboards.</p>
+        <div class="flex flex-wrap gap-2 mt-4 mb-5">
+          <span class="bg-[#262642] text-sm px-3 py-1 rounded-2xl">Html</span>
+          <span class="bg-[#262642] text-sm px-3 py-1 rounded-2xl">CSS</span>
+          <span class="bg-[#262642] text-sm px-3 py-1 rounded-2xl">Javascript</span>
+          <span class="bg-[#262642] text-sm px-3 py-1 rounded-2xl">React</span>
+        </div>
+        <a href="#" class="text-blue-500 underline hover:no-underline hover:text-blue-400">
+          Visit Project
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="bg-[#252525] rounded-xl mb-10 transition-transform duration-200 hover:border-2 hover:border-blue-500 hover:-translate-y-2 hover:scale-1">
+      <img src="./assets/card-1.png" class="mb-1 rounded-xl">
+      <div class="p-5 md:px-8">
+        <h3 class="text-2xl mb-3">Travel</h3>
+        <p class="text-[#A0A0A0] mb-10">Comprehensive block library for a decoupled WordPress frontend enhancing content creation experience and performance by 40% with TypeScript and Next.js.</p>
+        <div class="flex flex-wrap gap-2 mt-4 mb-5">
+          <span class="bg-[#262642] text-sm px-3 py-1 rounded-2xl">Html</span>
+          <span class="bg-[#262642] text-sm px-3 py-1 rounded-2xl">CSS</span>
+          <span class="bg-[#262642] text-sm px-3 py-1 rounded-2xl">Javascript</span>
+          <span class="bg-[#262642] text-sm px-3 py-1 rounded-2xl">React</span>
+        </div>
+        <a href="#" class="text-blue-500 underline hover:no-underline hover:text-blue-400">
+          Visit Project
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+      </div>
+    </div>
+  </div> <!-- GRID END -->
+
+    <!-- Button -->
+    <div class="flex justify-center">
+        <a href="writng.html" class="group px-4 py-2 rounded border-2 border-[#A0A0A0] hover:border-blue-500 hover:bg-blue-500">View All Projects
+        <i class="fa-solid fa-arrow-right-long ml-1 transition-all duration-200 group-hover:translate-x-1"></i></a>
+    </div>
+ </section>
+
+<!-- SKILLS Section -->
+<section class="mx-12 md:mx-36">
+    <!-- Title -->
+    <h2 class="text-4xl mt-40 mb-10 text-center items-center justify-center font-bold md:text-5xl md:mb-12 md:mt-40">My Skills</h2>
+    <!-- Skills GRID -->
+    <div class="grid md:grid-cols-3 gap-8">
+
+        <div class="border-2 border-blue-500 rounded-lg p-5 mb-10">
+            <h2 class="text-blue-500 text-2xl font-bold mb-6">Frontend</h2>
+            <div class="flex flex-wrap gap-3">
+            <span class="bg-[#262642] text-xs md:text-base text-blue-500 font-bold px-4 py-2 rounded-2xl">HTML5</span>
+            <span class="bg-[#262642] text-xs md:text-base text-blue-500 font-bold px-4 py-2 rounded-2xl">CSS Modules</span>
+            <span class="bg-[#262642] text-xs md:text-base text-blue-500 font-bold px-4 py-2 rounded-2xl">Javascript</span>
+            <span class="bg-[#262642] text-xs md:text-base text-blue-500 font-bold px-4 py-2 rounded-2xl">React</span>
+            <span class="bg-[#262642] text-xs md:text-base text-blue-500 font-bold px-4 py-2 rounded-2xl">Typescript</span>
+            </div>
+        </div>
+
+        <div class="border-2 border-blue-500 rounded-lg p-5 mb-10">
+            <h2 class="text-blue-500 text-2xl font-bold mb-6">Backend</h2>
+            <div class="flex flex-wrap gap-3">
+            <span class="bg-[#262642] text-xs md:text-base text-blue-500 font-bold px-4 py-2 rounded-2xl">Node.js</span>
+            <span class="bg-[#262642] text-xs md:text-base text-blue-500 font-bold px-4 py-2 rounded-2xl">Express</span>
+            <span class="bg-[#262642] text-xs md:text-base text-blue-500 font-bold px-4 py-2 rounded-2xl">MongoDB</span>
+            <span class="bg-[#262642] text-xs md:text-base text-blue-500 font-bold px-4 py-2 rounded-2xl">Rest API</span>
+            <span class="bg-[#262642] text-xs md:text-base text-blue-500 font-bold px-4 py-2 rounded-2xl">GraphQL</span>
+            </div>
+        </div>
+        <div class="border-2 border-blue-500 rounded-lg p-5 mb-10">
+            <h2 class="text-blue-500 text-2xl font-bold mb-6">Tools & Others</h2>
+            <div class="flex flex-wrap gap-3">
+            <span class="bg-[#262642] text-xs md:text-base text-blue-500 font-bold px-4 py-2 rounded-2xl">Git</span>
+            <span class="bg-[#262642] text-xs md:text-base text-blue-500 font-bold px-4 py-2 rounded-2xl">Github</span>
+            <span class="bg-[#262642] text-xs md:text-base text-blue-500 font-bold px-4 py-2 rounded-2xl">VS Code</span>
+            <span class="bg-[#262642] text-xs md:text-base text-blue-500 font-bold px-4 py-2 rounded-2xl">Figma</span>
+            <span class="bg-[#262642] text-xs md:text-base text-blue-500 font-bold px-4 py-2 rounded-2xl">Photoshop</span>
+            <span class="bg-[#262642] text-xs md:text-base text-blue-500 font-bold px-4 py-2 rounded-2xl">Canva</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- My JOURNEY Section -->
+ <section id="journey" class="mx-10 mb-28 md:mx-64 md:mb-20 scroll-mt-20">
+   
+  <!-- Journey Title -->
+  <div class="text-center">
+        <h2 class="text-4xl mt-40 mb-3 text-center items-center justify-center font-bold md:text-5xl md:mt-40">
+            My <span class="text-blue-500">Journey</span></h2>
+        <p class="text-[#A0A0A0] text-lg md:text-xl mb-20">Key milestones in my professional path</p>
+    </div>
+ 
+    <!-- TIMELINE row -->
+    <div class="flex w-full h-[2px] bg-blue-500 mb-28 items-center justify-center text-center gap-5 md:mb-20 md:gap-32">
+        <div class="w-16 h-16 bg-[#252525] rounded-full border-2 border-blue-500 p-4 transition-all duration-300 hover:scale-110 hover:bg-blue-500">2023</div>
+        <div class="w-16 h-16 bg-[#252525] rounded-full border-2 border-blue-500 p-4 transition-all duration-300 hover:scale-110 hover:bg-blue-500">2024</div>
+        <div class="w-16 h-16 bg-[#252525] rounded-full border-2 border-blue-500 p-4 transition-all duration-300 hover:scale-110 hover:bg-blue-500">2025</div>
+        <div class="w-16 h-16 bg-[#252525] rounded-full border-2 border-blue-500 p-4 transition-all duration-300 hover:scale-110 hover:bg-blue-500">2026</div>
+    </div>
+
+
+<!-- Journey GRID -->
+<div class="overflow-x-auto mb-20">
+  <div class="flex gap-6 px-4">
+
+    <!-- Card 1 -->
+    <div class="min-w-[220px] md:min-w-[300px] bg-[#252525] rounded-lg p-8">
+      <h2 class="text-blue-500 text-2xl font-bold mb-6">2023</h2>
+      <h3 class="font-bold text-xl">Bachelor of Technology</h3>
+      <h4 class="text-[#A0A0A0] font-semibold mb-5">KK College Of Engineering & Management</h4>
+      <p class="text-[#A0A0A0]">Computer Science & Engineering</p>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="min-w-[220px] md:min-w-[300px] bg-[#252525] rounded-lg p-8">
+      <h2 class="text-blue-500 text-2xl font-bold mb-6">2024</h2>
+      <h3 class="font-bold text-xl">Project: KampusKorner</h3>
+      <h4 class="text-[#A0A0A0] font-semibold mb-5">A Student Resource Platform</h4>
+      <p class="text-[#A0A0A0]">Built with Tailwind CSS & JavaScript</p>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="min-w-[220px] md:min-w-[300px] bg-[#252525] rounded-lg p-8">
+      <h2 class="text-blue-500 text-2xl font-bold mb-6">2025</h2>
+      <h3 class="font-bold text-xl">Achievements</h3>
+      <h4 class="text-[#A0A0A0] font-semibold mb-5">
+        • Data Analysis Certified (IIT ISM + SAIL) <br> • GFG Workshop Winner
+      </h4>
+      <p class="text-[#A0A0A0]">Selected among 200+ students</p>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="min-w-[220px] md:min-w-[300px] bg-[#252525] rounded-lg p-8">
+      <h2 class="text-blue-500 text-2xl font-bold mb-6">2026</h2>
+      <h3 class="font-bold text-xl">Classroom Program Member</h3>
+      <h4 class="text-[#A0A0A0] font-semibold mb-5">GeeksforGeeks</h4>
+      <p class="text-[#A0A0A0]">Focused on building strong full-stack development skills.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- Writing / Blog Section -->
+ <section id="writing" class="mx-12 mt-40 md:mx-32 scroll-mt-20">
+    <div class="text-center">
+        <!-- Writing Title -->
+        <h2 class="text-4xl mt-16 mb-3 text-center items-center justify-center font-bold md:text-5xl md:mt-20">
+            Latest <span class="text-blue-500">Articles</span></h2>
+        <p class="text-[#A0A0A0] text-lg md:text-xl mb-10 md:mb-20">Insights and perspectives on web development and design</p>
+    </div>
+
+    <!-- Blog CARDS -->
+    <div class="md:grid md:grid-cols-3 gap-10 ">
+
+    <!-- Blog_card-1 -->
+    <div class="bg-[#252525] rounded-xl mb-10 transition-transform duration-200 hover:border-2 hover:border-blue-500 hover:-translate-y-2 hover:scale-1">
+        <img src="./assets/blog-1.jpg" alt="Blog-1" class="mb-1 rounded-xl">
+        <div class="p-5">
+        <div class="flex justify-between items-center mb-4">
+            <span class="bg-[#262642] text-sm md:text-base px-3 py-1 rounded-2xl">Learning</span>  
+            <span class="text-[#A0A0A0] text-sm md:text-base">Nov 25,2025</span>
+        </div>
+        <h3 class="text-2xl mb-3">GeeksforGeeks Classroom Program Experience</h3>
+        <p class="text-[#A0A0A0] mb-3">A CSE student escapes tutorial hell, joins GFG Patna’s MERN program, travels weekly to learn, gains confidence, wins 3 workshops among 100+ students, and finally discovers real guidance, community, and growth.</p>
+        <a href="https://medium.com/@manshi.ruj49/from-tutorial-hell-to-patna-rails-my-gfg-classroom-journey-697e4678e0a9" target="_blank" class="text-blue-500 underline">Continue Reading<i class="fa-solid fa-arrow-right ml-2"></i></a>
+      </div>
+    </div>
+
+    <!-- Blog_card-2 -->
+     <div class="bg-[#252525] rounded-xl mb-10 transition-transform duration-200 hover:border-2 hover:border-blue-500 hover:-translate-y-2 hover:scale-1">
+        <img src="./assets/blog-2.png" alt="Blog-1" class="mb-1 rounded-xl">
+        <div class="p-5">
+        <div class="flex justify-between items-center mb-4">
+            <span class="bg-[#262642] text-sm md:text-base px-3 py-1 rounded-2xl">UIUX</span>  
+            <span class="text-[#A0A0A0] text-sm md:text-base">Dec 01,2025</span>
+        </div>
+        <h3 class="text-2xl mb-3">The Day Dark Mode Became a Hero</h3>
+        <p class="text-[#A0A0A0] mb-3">A small UI request turns into the platform’s most loved feature when an intern builds dark mode, solving real user pain and proving that thoughtful frontend work can change experiences.</p>
+        <a href="https://medium.com/@manshi.ruj49/from-tutorial-hell-to-patna-rails-my-gfg-classroom-journey-697e4678e0a9" target="_blank" class="text-blue-500 underline">Continue Reading<i class="fa-solid fa-arrow-right ml-2"></i></a>
+      </div>
+    </div>
+    </div> <!--GRID end-->
+
+    <!-- Button -->
+    <div class="flex justify-center">
+        <a href="writng.html" class="group px-4 py-2 rounded border-2 border-[#A0A0A0] hover:border-blue-500 hover:bg-blue-500">View All Articles
+        <i class="fa-solid fa-arrow-right-long ml-1 transition-all duration-200 group-hover:translate-x-1"></i></a>
+    </div>
+ </section>
+
+ <!-- Footer -->
+<footer class="bg-[#1E1E1E] w-full mt-36 pt-16 md:px-44">
+
+  <div class="grid grid-row-reverse mx-10 md:gap-40 mb-7 md:grid md:grid-cols-3">
+
+    <div class="mb-7">
+     <h2 class="text-2xl font-bold mb-5"><span class="text-blue-600">M</span>anshi Ruj</h2>
+     <p class="text-[#A0A0A0] mb-7">Building digital experiences that make a difference.</p>
+      <div class="flex gap-3 mb-7">
+        <a href="https://github.com/manshiruj49-dev" target="_blank" class="text-2xl text-blue-500 bg-[#262642] px-2 py-1 rounded-full hover:bg-gradient-to-l from-cyan-500 to-blue-500 hover:text-white hover:transition-transform duration-200 hover:scale-110 hover:rotate-[5deg] hover:cursor-pointer"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/manshi-ruj-333489382?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="text-2xl text-blue-500 bg-[#262642] px-2 py-1 rounded-full hover:bg-gradient-to-l from-cyan-500 to-blue-500 hover:text-white hover:transition-transform duration-200 hover:scale-110 hover:rotate-[5deg] hover:cursor-pointer"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://www.instagram.com/code_with_manshi?igsh=MW04ZDc5dzZjdjBydg==" class="text-2xl text-blue-500 bg-[#262642] px-2 py-1 rounded-full hover:bg-gradient-to-l from-cyan-500 to-blue-500 hover:text-white hover:transition-transform duration-200 hover:scale-110 hover:rotate-[5deg] hover:cursor-pointer"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+
+    <div class="mb-7 md:mb-0">
+      <h3 class="text-xl md:mb-5">Navigation<span class="block border-b-2 w-[2.5rem] pb-1 border-blue-500"></span></h3>
+      <a href="#" class="text-[#A0A0A0] hover:border-b hover:border-blue-500 hover:text-blue-500">Home</a><br>
+      <a href="#" class="text-[#A0A0A0] hover:border-b hover:border-blue-500 hover:text-blue-500">Work</a><br>
+      <a href="#" class="text-[#A0A0A0] hover:border-b hover:border-blue-500 hover:text-blue-500">Journey</a><br>
+      <a href="#" class="text-[#A0A0A0] hover:border-b hover:border-blue-500 hover:text-blue-500">Writing</a><br>
+      <a href="#" class="text-[#A0A0A0] hover:border-b hover:border-blue-500 hover:text-blue-500">Contact</a>
+    </div>
+
+    <div>
+      <h3 class="text-xl md:mb-5">Contact<span class="block border-b-2 w-[2.5rem] pb-1 border-blue-500"></span></h3>
+      <a href="mailto:manshi.ruj49@gmail.com" class="text-[#A0A0A0] hover:border-b hover:border-blue-500 hover:text-blue-500">manshi.ruj49@gmail.com</a>
+      <p class="text-[#A0A0A0]">Remote, India</p><br>
+      <a href="#contact" class="bg-gradient-to-l from-cyan-500 to-blue-500 py-2 px-5 rounded-full hover:bg-gradient-to-l hover:from-blue-500 hover:to-cyan-500">Get In Touch</a>      
+    </div>
+  </div>
+
+  <hr>
+  <div class="text-left text-center md:flex md:justify-between md:items-center">
+    <p class="text-sm md:text-base text-[#A0A0A0] my-4 md:my-7">© 2025 Manshi Ruj. All rights reserved.</p>
+    <p class="text-sm pb-5 md:pb-0 md:text-base text-[#A0A0A0]">
+      If you liked this, my code didn’t crash today
+      <span>❤️</span>
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>
